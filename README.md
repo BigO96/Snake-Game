@@ -7,6 +7,10 @@ Welcome to the Snake Game, a classic arcade game built using HTML, CSS, and Java
 
 Note: The game is compatable with desktop and mobile devices.
 
+To play go to: https://bigo96.github.io/Snake-Game/
+
+# Credit
+
 This Snake Game was created by Oscar Epp and is based on the classic Snake game.
 
 The Version here was heavily inspired by Simon Bruno's 'Chrome Snake'
