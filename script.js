@@ -9,7 +9,7 @@ let d;
 let canChangeDirection = true;
 
 function isMobile() {
-    return window.innerWidth <= 768; // Adjust the value as needed
+    return window.innerWidth <= 768;
 }
 // Initialize the game
 function init() {
