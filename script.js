@@ -8,6 +8,9 @@ let score = 0;
 let d;
 let canChangeDirection = true;
 
+function isMobile() {
+    return window.innerWidth <= 768; // Adjust the value as needed
+}
 // Initialize the game
 function init() {
     canvas.width = window.innerWidth;
@@ -23,6 +26,14 @@ function init() {
     score = 0;
     d = "RIGHT";
     startGame();
+
+    const mobileControls = document.getElementById('mobileControls');
+    if (isMobile()) {
+        mobileControls.style.display = 'block';
+    } else {
+        mobileControls.style.display = 'none';
+    }
+
 }
 
 // Spawn food at a random location
@@ -129,4 +140,33 @@ if (collision(newHead, snake)) {
 startButton.addEventListener('click', function() {
     startButton.style.display = 'none'; // Hide the button
     init(); // Initialize the game
+});
+
+const leftButton = document.getElementById('leftButton');
+const upButton = document.getElementById('upButton');
+const rightButton = document.getElementById('rightButton');
+const downButton = document.getElementById('downButton');
+
+leftButton.addEventListener('click', function() {
+    if (d !== "RIGHT") {
+        d = "LEFT";
+    }
+});
+
+upButton.addEventListener('click', function() {
+    if (d !== "DOWN") {
+        d = "UP";
+    }
+});
+
+rightButton.addEventListener('click', function() {
+    if (d !== "LEFT") {
+        d = "RIGHT";
+    }
+});
+
+downButton.addEventListener('click', function() {
+    if (d !== "UP") {
+        d = "DOWN";
+    }
 });
