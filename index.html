@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #2d2d2d;
+
+        }
+
+        #gameCanvas {
+            display: block;
+            background-color: #2d2d2d;
+        }
+
+        #startButton {
+            font-family: 'Poppins', sans-serif;
+            font-size: 30px;
+            color: #fff;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #startButton:hover {
+            color: #e0e0e0;
+        }
+
+        #timeDisplay {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #545454;
+            font-family: 'Poppins', sans-serif;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="gameCanvas"></canvas>
+    <button id="startButton">START</button>
+
+    <div id="timeDisplay"></div>
+
+    <script src="script.js"></script>
+    <script src="time.js"></script>
+
+</body>
+
+</html>
