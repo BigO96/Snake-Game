@@ -9,4 +9,4 @@ Note: The game is compatable with desktop and mobile devices.
 
 This Snake Game was created by Oscar Epp and is based on the classic Snake game.
 
-The Version here was heavily inspired by simon bruno's Chrome Snake
+The Version here was heavily inspired by Simon Bruno's 'Chrome Snake'
