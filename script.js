@@ -61,7 +61,6 @@ function direction(event) {
             d = "DOWN";
         }
 
-        // Enable direction change after a delay (200 milliseconds)
         setTimeout(() => {
             canChangeDirection = true;
         }, 50);
